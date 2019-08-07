@@ -1,9 +1,41 @@
+body {
+    background-image: url("../img/coffee_shop_table.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(238, 238, 238, 0.5) !important;
+    background-blend-mode: color;
+}
+.title {
+    text-align: center;
+    padding: 16px;
+    font-family: open sans-serif;
+    font-weight: 200;
+}
+.nav {
+    display: flex;
+    padding-left: 24px;
+    text-align: center;
+    font-weight: 100;
+    
+}
+.nav-link {
+    color: black;
+    padding: 8px;
+    
+}
 .navbar {
-    background: linear-gradient(5deg, pink, purple)
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    background-color: none;
+    
 }
 .About {
     font-size: 12pt;
-    padding-top: 1%
+    padding-bottom: 20%;
 }
 .boxedpar {
     border: none;
@@ -12,13 +44,13 @@
     margin: 0 auto;
 }
 #AboutParagraph {
-    text-align: center;
+    text-align: justify;
     font-size: x-small;
-    background: white;
+    /** background: white; **/
     display: block;
     padding-top: 5%;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: darkslategray;
+    color: black;
     font-weight: 300px;
 }
 
@@ -34,3 +66,54 @@
     border-radius: 50%;
 
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    /**color: white;**/
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    /**background-color: #f2f2f2;*/
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  img {
+      width: 100%;
+  }
