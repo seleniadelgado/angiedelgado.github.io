@@ -1,10 +1,7 @@
-body {
-    background-image: url("../img/coffee_shop_table.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(238, 238, 238, 0.5) !important;
-    background-blend-mode: color;
+body { 
+  background-image: radial-gradient(#cbf5f2 20%, transparent 0);
+  background-size: 100px 100px;
+  background-position: 8, 0, 15px 15px;
 }
 .title {
     text-align: center;
@@ -34,8 +31,10 @@ body {
     
 }
 .About {
+  
     font-size: 12pt;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
+    background: white;
 }
 .boxedpar {
     border: none;
@@ -52,18 +51,22 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: black;
     font-weight: 300px;
+    margin-left: 10%
 }
 
 #Angie {
     width: 25%;
     height: auto;
     display: block;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
     padding:10px;
     border:1px;
-    background-color: aliceblue;
+    background-color: turquoise;
     border-radius: 50%;
+    float: left;
+    padding-left: 
+
 
 }
 
