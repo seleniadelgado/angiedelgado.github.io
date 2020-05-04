@@ -100,6 +100,15 @@ body, html {
     animation-delay: 1600ms;
 }
 
+.star:nth-child(4) {
+    top: calc(50% - -90px);
+    left: calc(50% - 200px);
+    animation-delay: 1600ms;
+}
+  
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+    animation-delay: 1600ms;
+}
 
 
 /* Animations */
@@ -141,7 +150,7 @@ body, html {
 /* End of Stars */
 /* Dessert Starts */
 .dessert {
-    margin-top: 80px;
+    margin-top: 70px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -154,7 +163,7 @@ body, html {
     font-size: var(--font-lg);
     display: flex;
     justify-content: center;
-    padding-bottom: 15%;
+    padding-bottom: 20%
 }
 #project-icons {
     font: var(--title-font);
