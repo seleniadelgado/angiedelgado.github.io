@@ -1,7 +1,10 @@
 :root {
     --primary-color: #273036;
-    --title-font: 'Raleway', sans-serif;
-    --paragraph-font:'Playfair Display', serif;
+    --title-font: 'Playfair Display', serif;
+    --paragraph-font: 'Raleway', sans-serif;
+    --font-lg: 62px;
+    --font-md: 48px;
+    --font-sm: 36px
 
 
 }
@@ -13,7 +16,7 @@
   
 main {
     background: #43C6AC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom,  #43C6AC, pink);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom,  #43C6AC, pink, orange);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,  #43C6AC, pink, orange); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     align-items: flex-start;
@@ -32,7 +35,7 @@ body, html {
 }
 
 .sky-container, .sky-container1 {
-    margin-top: 20%;
+    
     width: 500px;
     height: 100px;
     display: flex;
@@ -96,26 +99,9 @@ body, html {
 .star:nth-child(3)::before, .star:nth-child(3)::after {
     animation-delay: 1600ms;
 }
-  
-.star:nth-child(4) {
-    top: calc(50% - 50px);
-    left: calc(50% - 250px);
-    animation-delay: 4700ms;
-}
 
-.star:nth-child(4)::before, .star:nth-child(4)::after {
-    animation-delay: 4700ms;
-}
-  
-.star:nth-child(5) {
-    top: calc(50% - -190px);
-    left: calc(50% - 200px);
-    animation-delay: 2100ms;
-}
 
-.star:nth-child(5)::before, .star:nth-child(5)::after {
-    animation-delay: 2100ms;
-}
+
 /* Animations */
 @keyframes tail {
     0% {
@@ -155,11 +141,26 @@ body, html {
 /* End of Stars */
 /* Dessert Starts */
 .dessert {
+    margin-top: 80px;
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-top: 30px;
+    
 }
 /* Dessert Ends */
 /* Projects Section Start */
+#section-title {
+    font: var(--title-font);
+    font-size: var(--font-lg);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+#project-icons {
+    font: var(--title-font);
+    font-size: var(--font-md);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
 /* Projects Section Ends */
