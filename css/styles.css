@@ -48,8 +48,8 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 2px;
-    background: linear-gradient(-45deg, white);
+    height: 1px;
+    background: linear-gradient(-45deg, white, yellow);
     filter: drop-shadow(0 0 6px yellow);
     animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
@@ -60,7 +60,7 @@ body, html {
     top: calc(50% - 1px);
     right: 0;
     height: 1px;
-    background: white;
+    background: linear-gradient(-45deg, yellow, white);
     border-radius: 100%;
     transform: translateX(50%) rotateZ(45deg);
     animation: shining 3000ms ease-in-out infinite;
