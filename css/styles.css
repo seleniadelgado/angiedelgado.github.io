@@ -2,7 +2,8 @@
     --primary-color: #273036;
     --title-font: 'Playfair Display', serif;
     --paragraph-font: 'Raleway', sans-serif;
-    --font-lg: 52px;
+    --font-xl: 52px;
+    --font-lg: 24px;
     --font-md: 16px;
     --font-sm: 12px;
 }
@@ -156,7 +157,7 @@ body, html {
 /* Dessert Ends */
 /* Projects Section Start */
 .title {
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
     font-family: var(--title-font);
     text-align: center;
     margin-top: 2%;
@@ -170,7 +171,43 @@ body, html {
     font-family: var(--paragraph-font);
     margin-bottom: auto;
     margin-top: auto;
-    width: 40em;
+    width: 50em;
+}
+
+.projects-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: var(--font-lg);
+    font-family: var(--title-font);
+}
+
+#portfolio-projects {
+    width:50em;
+    display: flex;
+    flex-wrap: initial;
+    justify-content: space-around;
+    align-content: center; 
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.projects1 {
+    height: 210px;
+    width: 275px;
+}
+
+.projects2 {
+    height: 210px;
+    width: 255px;
+
+}
+
+.projects3 {
+    height: 210px;
+    width: 250px;
+
 }
 
 #work {
@@ -186,30 +223,36 @@ body, html {
 }
 
 .icons {
-    height: 25px;
-    width: 25px;
+    height: 30 px;
+    width: 30px;
     margin: 10px;
 }
 
+.title-chat {
+    margin-top: 50px;
+    text-align: center;
+    font-size: var(--font-lg);
+    font-family: var(--title-font);
+}
 #chat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#chat a {
     font-size: var(--font-md);
     font-family: var(--paragraph-font);
-    display: inline-flex;
-    justify-content: center;
-    margin: 20px;
-    width: 100%;
-}
-#chat a {
+    width: auto;
     color: black;
-    display: block;
-    text-align: center;
 }
+
 .footer {
     display: flex;
     justify-content: center;
     padding-top: 10%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     background-color: pink;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--paragraph-font)
 }
 /* Projects Section Ends */
