@@ -12,7 +12,7 @@
 * {
     box-sizing: border-box;
 }
-  
+ 
 main {
     background: #43C6AC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom,  #43C6AC, pink, orange);  /* Chrome 10-25, Safari 5.1-6 */
@@ -26,7 +26,7 @@ main {
   
 body, html {
     height: 100vh;
-    margin: 0;
+    width: fit-content;
 }
 
 .sky-container {
@@ -164,32 +164,39 @@ body, html {
     margin-bottom: 2%;
 }
 #about {
-    margin-left: auto;
-    margin-right: auto;
+
     text-align: justify;
     font-size: var(--font-md);
     font-family: var(--paragraph-font);
-    margin-bottom: auto;
-    margin-top: auto;
-    width: 50em;
+    padding: 5%;
+}
+@media (max-width:800px) 
+/* 800px for tablets and phones */
+{
+    #about {
+        display: flex;
+        flex-wrap: column wrap;  
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 .projects-title {
-    margin-top: 50px;
+    margin-top: 5%;
+    margin-bottom: 10%;
     text-align: center;
     font-size: var(--font-lg);
     font-family: var(--title-font);
 }
 
 #portfolio-projects {
-    width:50em;
+
     display: flex;
-    flex-wrap: initial;
-    justify-content: space-around;
-    align-content: center; 
+    flex-wrap: column wrap;
+    width: 50em;
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -209,9 +216,20 @@ body, html {
     width: 250px;
 
 }
+@media (max-width:800px) 
+/* 800px for tablets and phones */
+{
+    #portfolio-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
 
-#work {
-    padding: 1% 15% 5% 15%;
+    }
+    .projects1, .projects2, .projects3 {
+        width: auto;
+        align-self: center;
+    }
 }
 
 .project-icons {
@@ -243,13 +261,13 @@ body, html {
 #chat a {
     font-size: var(--font-md);
     font-family: var(--paragraph-font);
-    width: auto;
+    width: auto%;
     color: black;
 }
 
 .footer {
     display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 10%;
     padding-bottom: 1%;
     background-color: pink;
