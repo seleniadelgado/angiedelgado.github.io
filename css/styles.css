@@ -2,7 +2,7 @@
     --primary-color: #273036;
     --title-font: 'Playfair Display', serif;
     --paragraph-font: 'Raleway', sans-serif;
-    --font-xl: 52px;
+    --font-xl: 36px;
     --font-lg: 24px;
     --font-md: 16px;
     --font-sm: 12px;
@@ -178,14 +178,14 @@ body, html {
         flex-wrap: column wrap;  
         padding-left: 5%;
         padding-right: 5%;
+        font-size: var(--font-md);
     }
 }
 
 .projects-title {
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     text-align: center;
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
     font-family: var(--title-font);
 }
 
@@ -219,6 +219,13 @@ body, html {
 @media (max-width:800px) 
 /* 800px for tablets and phones */
 {
+    .projects-title {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        font-size: var(--font-xl);
+        font-family: var(--title-font);
+    }
     #portfolio-projects {
         display: flex;
         flex-direction: column;
@@ -230,6 +237,7 @@ body, html {
         width: auto;
         align-self: center;
     }
+   
 }
 
 .project-icons {
@@ -261,12 +269,11 @@ body, html {
 #chat a {
     font-size: var(--font-md);
     font-family: var(--paragraph-font);
-    width: auto%;
+    width: auto;
     color: black;
 }
 
 .footer {
-    display: flex;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 1%;
