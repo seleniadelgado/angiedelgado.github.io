@@ -179,18 +179,16 @@ body, html {
 
 .project-icons {
     display: flex;
-    justify-content: space-evenly;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    justify-self: center;
     margin-bottom: auto;
-    text-align: justify;
+
 }
 
 .icons {
     height: 25px;
     width: 25px;
-    margin: 0% 3% 0% 3%;
+    margin: 10px;
 }
 
 #chat {
@@ -199,11 +197,12 @@ body, html {
     display: inline-flex;
     justify-content: center;
     margin: 20px;
-    width: 90%;
+    width: 100%;
 }
 #chat a {
     color: black;
-    font-weight: bolder;
+    display: block;
+    text-align: center;
 }
 .footer {
     display: flex;
