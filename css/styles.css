@@ -170,7 +170,7 @@ body, html {
     font-family: var(--paragraph-font);
     padding: 5%;
 }
-@media (max-width:800px) 
+@media (max-width:767px) 
 /* 800px for tablets and phones */
 {
     #about {
@@ -216,8 +216,8 @@ body, html {
     width: 250px;
 
 }
-@media (max-width:800px) 
-/* 800px for tablets and phones */
+@media (max-width:767px) 
+/* 767px for tablets and phones */
 {
     .projects-title {
         margin-top: 5%;
